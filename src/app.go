@@ -1,16 +1,15 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"net/http"
 	"time"
+
+	"github.com/kentlouisetonino/go-integration/src/routes"
 )
 
 func main() {
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Println("Hello World!")
-	})
+	http.HandleFunc("/", routes.RootRoute)
 
 	s := &http.Server{
 		Addr:           ":11000",
