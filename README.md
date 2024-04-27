@@ -1,14 +1,14 @@
-###  ${\color{green}DESCRIPTION}$
+###  ${\color{green} \textnormal{DESCRIPTION}}$
 #
 
-- A Go backend playground that integrates with different technologies.
+> - A Go backend playground that integrates with different technologies.
 
 <br />
 <br />
 
 
 
-### ${\color{green}DEVELOPMENT}$
+###  ${\color{green} \textnormal{LOCAL DEVELOPMENT}}$
 #
 
 ```bash
