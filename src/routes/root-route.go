@@ -6,6 +6,12 @@ import (
 	"github.com/kentlouisetonino/go-integration/src/controllers"
 )
 
+type Response struct {
+	Message string
+}
+
 func RootRoute(w http.ResponseWriter, r *http.Request) {
-	controllers.RootController()
+	if r.URL.Path == "/" {
+		controllers.RootController(w)
+	}
 }

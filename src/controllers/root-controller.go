@@ -1,7 +1,22 @@
 package controllers
 
-import "fmt"
+import (
+	"encoding/json"
+	"fmt"
+	"log"
+	"net/http"
+)
 
-func RootController() {
-	fmt.Println("Meaningless Life!")
+type Response struct {
+	Message string
+}
+
+func RootController(w http.ResponseWriter) {
+	jsonResponse, err := json.Marshal(Response{Message: "hello"})
+
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Fprintf(w, string(jsonResponse))
 }
