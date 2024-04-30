@@ -9,8 +9,8 @@ import (
 )
 
 func main() {
-	http.HandleFunc("/", routes.RootRoute)
-	http.HandleFunc("/api/aws", routes.AWSRoute)
+	http.HandleFunc("/health", routes.HealthRoute)
+	http.HandleFunc("/api/aws/s3/upload", routes.AWSS3Upload)
 
 	s := &http.Server{
 		Addr:           ":11000",

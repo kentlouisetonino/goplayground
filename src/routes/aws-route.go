@@ -5,9 +5,11 @@ import (
 	"net/http"
 )
 
-func AWSRoute(w http.ResponseWriter, r *http.Request) {
-	fmt.Println(r.URL.Path)
-	if r.Method == http.MethodPost && r.URL.Path == "/s3/upload" {
-		fmt.Fprintf(w, "Hello Hell!")
+func AWSS3Upload(w http.ResponseWriter, r *http.Request) {
+	if r.Method == http.MethodPost {
+		fmt.Println(r.URL.Path)
+		return
 	}
+
+	http.Error(w, "Endpoint not found.", http.StatusNotFound)
 }

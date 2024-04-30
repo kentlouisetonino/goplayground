@@ -9,10 +9,11 @@ import (
 
 type Response struct {
 	Message string `json:"message"`
+	Code    int    `json:"code"`
 }
 
-func RootController(w http.ResponseWriter) {
-	jsonResponse, err := json.Marshal(Response{Message: "Meaningless Life!"})
+func HealthController(w http.ResponseWriter) {
+	jsonResponse, err := json.Marshal(Response{Message: "Server is running.", Code: http.StatusOK})
 
 	if err != nil {
 		log.Fatal(err)
