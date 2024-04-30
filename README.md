@@ -3,6 +3,17 @@
 
 > - A Go backend playground that integrates with different technologies.
 
+```plaintext
+# API URL.
+http://localhost:11000/api
+
+# Health check route.
+/health
+
+# AWS API routes.
+/aws/s3/upload
+```
+
 <br />
 <br />
 

@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	http.HandleFunc("/health", routes.HealthRoute)
+	http.HandleFunc("/api/health", routes.HealthRoute)
 	http.HandleFunc("/api/aws/s3/upload", routes.AWSS3Upload)
 
 	s := &http.Server{
