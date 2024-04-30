@@ -3,7 +3,7 @@
 
 > - A Go backend playground that integrates with different technologies.
 
-```plaintext
+```bash
 # API URL.
 http://localhost:11000/api
 
