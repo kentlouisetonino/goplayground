@@ -10,6 +10,7 @@ import (
 
 func main() {
 	http.HandleFunc("/", routes.RootRoute)
+	http.HandleFunc("/api/aws", routes.AWSRoute)
 
 	s := &http.Server{
 		Addr:           ":11000",

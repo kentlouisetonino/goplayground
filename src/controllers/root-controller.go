@@ -8,11 +8,11 @@ import (
 )
 
 type Response struct {
-	Message string
+	Message string `json:"message"`
 }
 
 func RootController(w http.ResponseWriter) {
-	jsonResponse, err := json.Marshal(Response{Message: "hello"})
+	jsonResponse, err := json.Marshal(Response{Message: "Meaningless Life!"})
 
 	if err != nil {
 		log.Fatal(err)
