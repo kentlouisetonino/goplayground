@@ -9,9 +9,6 @@ http://localhost:11000/api
 
 # Health check route.
 /health
-
-# AWS API routes.
-/aws/s3/upload
 ```
 
 <br />
