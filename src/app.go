@@ -18,5 +18,6 @@ func main() {
 		MaxHeaderBytes: 1 << 20,
 	}
 
+	log.Println("Server is live at http://localhost:11000/api/health")
 	log.Fatal(s.ListenAndServe())
 }
