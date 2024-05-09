@@ -1,4 +1,4 @@
-###  ${\color{green} \textnormal{Description}}$
+### Description
 #
 
 > - A Go backend playground that integrates with different technologies.
@@ -19,7 +19,7 @@ http://localhost:11000/api
 
 
 
-###  ${\color{green} \textnormal{Local Development}}$
+###  Commands
 #
 
 ```bash
