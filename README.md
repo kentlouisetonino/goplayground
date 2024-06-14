@@ -1,7 +1,7 @@
 ### Description
 #
 
-> - A Go playground that integrates with different technologies.
+> - A Go server playground that integrates with different technologies.
 
 ```bash
 # API URL.
