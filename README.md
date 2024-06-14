@@ -1,9 +1,7 @@
 ### Description
 #
 
-> - A Go backend playground that integrates with different technologies.
-
-> - This is also where I tinker Go standard libraries and available modules.
+> - A Go playground that integrates with different technologies.
 
 ```bash
 # API URL.
