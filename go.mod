@@ -1,4 +1,4 @@
-module github.com/kentlouisetonino/go-integration
+module github.com/kentlouisetonino/GoBackend
 
 go 1.22.2
 
