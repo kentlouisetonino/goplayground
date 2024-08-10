@@ -19,7 +19,12 @@ GET /health
 
 ```bash
 # Change permission and make it executable.
+sudo chmod +x run-build.sh
 sudo chmod +x run.sh
+
+
+# Run the build.
+./run-build.sh
 
 # Run the server.
 ./run.sh
