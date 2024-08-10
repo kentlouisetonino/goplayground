@@ -5,15 +5,18 @@ import (
 	"net/http"
 	"os"
 
+	"github.com/joho/godotenv"
 	"github.com/kentlouisetonino/gointegration/src/handlers"
 )
 
 func main() {
+	envErr := godotenv.Load()
+	if envErr != nil {
+		log.Fatal("Error loading env variables.")
+	}
+
 	// Get the PORT from the environment variable.
 	port := os.Getenv("PORT")
-	if port == "" {
-		port = "11000"
-	}
 
 	// Health check.
 	http.HandleFunc("/api/health", handlers.Health)
