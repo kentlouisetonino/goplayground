@@ -7,7 +7,7 @@
 http://localhost:11000/api
 
 # Health check route.
-/health
+GET /health
 ```
 
 <br />

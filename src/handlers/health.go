@@ -2,8 +2,9 @@ package handlers
 
 import (
 	"encoding/json"
-	"log"
 	"net/http"
+
+	"github.com/kentlouisetonino/gointegration/src/libs"
 )
 
 type HealthResponse struct {
@@ -37,18 +38,6 @@ func Health(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	// Colors for formatting
-	blue := "\033[34m"
-	green := "\033[32m"
-	red := "\033[31m"
-	reset := "\033[0m"
-
-	// Color the status code based on its value.
-	statusColor := green
-	if response.StatusCode >= 400 && response.StatusCode <= 500 {
-		statusColor = red
-	}
-
 	// Log the request.
-	log.Printf("%s/api/health%s %s%d%s", blue, reset, statusColor, response.StatusCode, reset)
+	libs.APILogger("/api/health", response.StatusCode)
 }
