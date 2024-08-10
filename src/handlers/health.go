@@ -5,24 +5,20 @@ import (
 	"net/http"
 
 	"github.com/kentlouisetonino/gointegration/src/libs"
+	"github.com/kentlouisetonino/gointegration/src/models"
 )
 
-type HealthResponse struct {
-	Message    string `json:"message"`
-	StatusCode int    `json:"status_code"`
-}
-
 func Health(w http.ResponseWriter, r *http.Request) {
-	var response HealthResponse
+	var response models.HTTPResponse
 
 	// Ensure the request is a GET method.
 	if r.Method != http.MethodGet {
-		response = HealthResponse{
+		response = models.HTTPResponse{
 			Message:    "Method not allowed",
 			StatusCode: http.StatusMethodNotAllowed,
 		}
 	} else {
-		response = HealthResponse{
+		response = models.HTTPResponse{
 			Message:    "Server is ready.",
 			StatusCode: http.StatusOK,
 		}
