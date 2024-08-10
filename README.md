@@ -17,6 +17,15 @@ GET /health
 
 ## $\textnormal{Local Development}$
 
+> - Create a `.env` file.
+
+```sh
+# Environment variables.
+PORT=11000
+```
+
+> - Run the following commands below.
+
 ```bash
 # Change permission and make it executable.
 sudo chmod +x run-build.sh
