@@ -7,6 +7,7 @@ import (
 
 	"github.com/joho/godotenv"
 	"github.com/kentlouisetonino/gointegration/src/handlers"
+	"github.com/kentlouisetonino/gointegration/src/libs"
 )
 
 func main() {
@@ -21,8 +22,8 @@ func main() {
 	// Health check.
 	http.HandleFunc("/api/health", handlers.Health)
 
-	// Start the server
-	log.Printf("Server is listening on port %s.", port)
+	// Start the server.
+	log.Printf("%sServer is listening on port %s.%s", libs.Green, port, libs.Reset)
 
 	// Handle the error.
 	err := http.ListenAndServe(":"+port, nil)
