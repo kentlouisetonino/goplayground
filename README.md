@@ -1,4 +1,4 @@
-## $\textnormal{GoIntegration}$
+## $\textnormal{GoPlayground}$
 
 > - A Go server playground that integrates with different technologies.
 
