@@ -1,3 +1,3 @@
 #!/bin/bash
 
-go run src/main.go
+go run server/main.go
