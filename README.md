@@ -1,4 +1,4 @@
-## $\textnormal{GoPlayground}$
+## GoBackend
 
 > - A Go server playground that integrates with different technologies.
 
@@ -15,7 +15,7 @@ GET /health
 
 
 
-## $\textnormal{Local Development}$
+## Setup
 
 > - Create a `.env` file.
 
