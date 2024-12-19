@@ -1,6 +1,6 @@
 ## Go-Labs
 
-> - A laboratory for experimenting with Go concepts.
+> - A laboratory for experimenting with Go.
 
 ```bash
 # API URL.
@@ -27,14 +27,6 @@ PORT=11000
 > - Run the following commands below.
 
 ```bash
-# Change permission and make it executable.
-sudo chmod +x run-build.sh
-sudo chmod +x run.sh
-
-
-# Run the build.
-./run-build.sh
-
-# Run the server.
-./run.sh
+# Run the run script in makefile.
+make run
 ```
