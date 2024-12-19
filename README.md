@@ -1,6 +1,6 @@
-## GoBackend
+## Go-Labs
 
-> - A Go server playground that integrates with different technologies.
+> - A laboratory for experimenting with Go concepts.
 
 ```bash
 # API URL.
