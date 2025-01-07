@@ -19,7 +19,7 @@ func main() {
 	// Get the PORT from the environment variable.
 	port := os.Getenv("PORT")
 
-	// Health check.
+	// Handlers for all expose APIs.
 	http.HandleFunc("/api/health", handlers.Health)
 
 	// Log the available api endpoints.
