@@ -22,6 +22,10 @@ func main() {
 	// Health check.
 	http.HandleFunc("/api/health", handlers.Health)
 
+	// Log the available api endpoints.
+	libs.AddNewLine()
+	libs.APIEndpointLogger("/api/health")
+
 	// Start the server.
 	log.Printf("%sServer is listening on port %s.%s", libs.Green, port, libs.Reset)
 

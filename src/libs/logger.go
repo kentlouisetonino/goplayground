@@ -1,6 +1,13 @@
 package libs
 
-import "log"
+import (
+	"fmt"
+	"log"
+)
+
+func APIEndpointLogger(message string) {
+	fmt.Printf("[API] %s%s%s \n", Green, message, Reset)
+}
 
 func APILogger(message string, statusCode int) {
 
