@@ -1,4 +1,4 @@
-## SW - Go Labs
+## SW - Golang Labs
 
 > - A laboratory for experimenting with Go.
 
