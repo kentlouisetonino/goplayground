@@ -6,8 +6,8 @@ import (
 	"os"
 
 	"github.com/joho/godotenv"
-	"github.com/kentlouisetonino/go-labs/src/handlers"
-	"github.com/kentlouisetonino/go-labs/src/libs"
+	"github.com/kentlouisetonino/sw-golang-labs/src/handlers"
+	"github.com/kentlouisetonino/sw-golang-labs/src/libs"
 )
 
 func main() {

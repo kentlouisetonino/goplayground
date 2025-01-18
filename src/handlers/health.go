@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/kentlouisetonino/go-labs/src/libs"
-	"github.com/kentlouisetonino/go-labs/src/models"
+	"github.com/kentlouisetonino/sw-golang-labs/src/libs"
+	"github.com/kentlouisetonino/sw-golang-labs/src/models"
 )
 
 func Health(w http.ResponseWriter, r *http.Request) {

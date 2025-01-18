@@ -1,4 +1,4 @@
-module github.com/kentlouisetonino/go-labs
+module github.com/kentlouisetonino/sw-golang-labs
 
 go 1.23.0
 
